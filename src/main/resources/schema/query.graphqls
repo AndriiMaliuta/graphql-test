@@ -1,0 +1,19 @@
+type Query {
+    firstQuery: String
+    fullName(request: MyRequest): String
+    student(id: Long): StudentResponse
+}
+
+input MyRequest {
+    firstName: String!
+    lastName: String
+}
+
+type StudentResponse {
+    id: Long
+    firstName: String!
+    lastName: String
+    email: String
+    street: String
+    city: String
+}

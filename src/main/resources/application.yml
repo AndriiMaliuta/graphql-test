@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: 'jdbc:h2:mem:graphql'
+    username: 'sa'
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+# Instead of '/graphi'
+graphiql:
+  mapping: '/app'
+graphql:
+  servlet:
+    mapping: '/request'
