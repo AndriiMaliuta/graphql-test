@@ -19,7 +19,7 @@ public class TestController {
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         HttpEntity<String> request = new HttpEntity<>("some body", headers);
-        
+
         RequestEntity<Void> requestEntity = RequestEntity.get(URI.create("http://localhost:8080/request")).headers(headers).build();
 
         ResponseEntity<String> response = restTemplate.postForEntity("http://localhost:8080/request", request, String.class);
