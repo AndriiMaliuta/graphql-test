@@ -13,6 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,6 +23,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "student")
+@Builder
 public class Student {
 
 	@Id
